@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import logoImage from "../../assets/logo-paraiba.png";
 
 export default function Navbar() {
   return (
     <MyNavbar>
-      <h1>Costelão Paraiba</h1>
+      <img src={logoImage} alt="Logo" />
     </MyNavbar>
   );
 }
@@ -14,10 +15,9 @@ const MyNavbar = styled.nav`
   justify-content: center;
 
   width: 100%;
-  height: 60px;
-  padding: 0 20px;
+  padding-top: 0%;
   
-  background-color: #e25454;
+  background-color: #EEE;
 
   color: white;
 `;
