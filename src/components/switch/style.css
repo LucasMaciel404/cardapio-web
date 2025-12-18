@@ -10,6 +10,7 @@
   padding: 0.25rem;
   width: 300px;
   font-size: 14px;
+  border-bottom: 3px solid black;
 }
 
 .radio-inputs .radio {

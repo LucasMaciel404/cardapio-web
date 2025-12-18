@@ -1,7 +1,7 @@
 import { useState } from "react";
-import './style.css'
+import "./style.css";
 export default function Switch() {
-  const [value, setValue] = useState("HTML");
+  const [value, setValue] = useState("combos");
 
   return (
     <div className="radio-inputs">
@@ -9,33 +9,33 @@ export default function Switch() {
         <input
           type="radio"
           name="radio"
-          value="HTML"
-          checked={value === "HTML"}
+          value="combos"
+          checked={value === "combos"}
           onChange={(e) => setValue(e.target.value)}
         />
-        <span className="name">HTML</span>
+        <span className="name">Combos</span>
       </label>
 
       <label className="radio">
         <input
           type="radio"
           name="radio"
-          value="React"
-          checked={value === "React"}
+          value="bebidas"
+          checked={value === "bebidas"}
           onChange={(e) => setValue(e.target.value)}
         />
-        <span className="name">React</span>
+        <span className="name">Bebidas</span>
       </label>
 
       <label className="radio">
         <input
           type="radio"
           name="radio"
-          value="Vue"
-          checked={value === "Vue"}
+          value="porções"
+          checked={value === "porções"}
           onChange={(e) => setValue(e.target.value)}
         />
-        <span className="name">Vue</span>
+        <span className="name">Porções</span>
       </label>
     </div>
   );

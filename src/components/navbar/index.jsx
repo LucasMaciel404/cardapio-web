@@ -20,4 +20,6 @@ const MyNavbar = styled.nav`
   background-color: #EEE;
 
   color: white;
+
+  border-bottom: 2px solid black;
 `;
