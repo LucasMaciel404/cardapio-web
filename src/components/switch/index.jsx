@@ -4,7 +4,6 @@ export default function Switch({ onChange }) {
   const [value, setValue] = useState("combos");
   function handleChange(newValue) {
     setValue(newValue);
-    console.log("New value:", newValue);
     onChange(newValue);
   }
   return (
