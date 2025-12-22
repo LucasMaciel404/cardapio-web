@@ -3,42 +3,70 @@
   inset: 0;
   width: 100vw;
   height: 100vh;
-  background: #eee; /* ou transparente */
+
+  background: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 14px;
+
   z-index: 9999;
-  transition: opacity 1s ease;
+
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .splash.fade {
   opacity: 0;
+  transform: scale(0.98);
   pointer-events: none;
 }
 
 .logo {
   width: 160px;
+  animation: logoPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
 }
 
 .username {
-  color: #000 ;
+  color: #000;
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.75;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .social {
   display: flex;
-  gap: 16px;
+  gap: 18px;
+  margin-top: 8px;
 }
 
 .social img {
-  width: 24px;
+  width: 26px;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.7;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .social img:hover {
   opacity: 1;
+  transform: scale(1.15);
 }
+

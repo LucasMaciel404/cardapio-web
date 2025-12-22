@@ -10,16 +10,19 @@ export default function Navbar() {
 }
 
 const MyNavbar = styled.nav`
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  position: fixed;
+
   width: 100%;
+  height: 100px;
   padding-top: 0%;
   
-  background-color: #EEE;
-
+  background-color: #eee;
   color: white;
-
+  
   border-bottom: 2px solid black;
 `;

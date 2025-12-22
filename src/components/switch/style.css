@@ -1,59 +1,45 @@
-/* From Uiverse.io by Yaya12085 */
-.radio-inputs {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 0.5rem;
-  background-color: #eee;
-  box-sizing: border-box;
-  padding: 0.25rem;
-  width: 300px;
-  font-size: 14px;
-  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
-  border-bottom: 3px solid black;
-}
 .radio-inputs {
   position: fixed;
-  bottom: 20px; /* distância do fundo */
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 
   display: flex;
-  flex-wrap: wrap;
-  border-radius: 0.5rem;
-  background-color: #eee;
+  width: 100vw;
+  /* padding: 0.25rem 0.25rem 1rem 0.25rem; */
+
+  background-color: #cc3434;
   box-sizing: border-box;
-  padding: 0.25rem;
-  width: 300px;
   font-size: 14px;
-  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
-  border-bottom: 3px solid black;
   z-index: 999;
 }
 
+/* cada opção */
 .radio-inputs .radio {
-  flex: 1 1 auto;
+  flex: 1;
   text-align: center;
+  cursor: pointer;
 }
 
-.radio-inputs .radio input {
-  display: none;
-}
-
+/* texto */
 .radio-inputs .radio .name {
   display: flex;
-  cursor: pointer;
   align-items: center;
   justify-content: center;
-  /* border-radius: 0.5rem; */
-  border: none;
-  padding: 0.5rem 0;
-  color: rgba(51, 65, 85, 1);
-  transition: all 0.15s ease-in-out;
+
+  padding: 1rem 0;
+  
+  color: #fff;
+
+  /* reserva espaço */
+  border-bottom: 5px solid transparent;
+
+  transition: color 0.15s ease-in-out,
+              border-color 0.15s ease-in-out;
 }
 
-.radio-inputs .radio input:checked + .name {
-  background-color: #fff;
+/* item ativo */
+.radio-inputs .radio.active .name {
   font-weight: 600;
-  border-bottom: red 3px solid;
+  border-bottom-color: #fff;
 }

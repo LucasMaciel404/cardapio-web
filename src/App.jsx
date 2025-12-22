@@ -47,6 +47,7 @@ function App() {
                 text: item.nome,
                 description: item.descricao || "",
                 price: `R$ ${item.preco.toFixed(2)}`,
+                serve: item.serve || null,
               }}
             </Card>
           ))}
@@ -58,6 +59,9 @@ function App() {
 
 const MyBody = styled.div`
   padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  
   width: 100vw;
 `;
 
@@ -65,7 +69,7 @@ const List = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 20px;
+  margin: 20px 0;
 `;
 
 export default App;
