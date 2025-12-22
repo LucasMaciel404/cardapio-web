@@ -1,8 +1,12 @@
 import { useState } from "react";
 import "./style.css";
-export default function Switch() {
+export default function Switch({ onChange }) {
   const [value, setValue] = useState("combos");
-
+  function handleChange(newValue) {
+    setValue(newValue);
+    console.log("New value:", newValue);
+    onChange(newValue);
+  }
   return (
     <div className="radio-inputs">
       <label className="radio">
@@ -11,7 +15,7 @@ export default function Switch() {
           name="radio"
           value="combos"
           checked={value === "combos"}
-          onChange={(e) => setValue(e.target.value)}
+          onChange={(e) => handleChange(e.target.value)}
         />
         <span className="name">Combos</span>
       </label>
@@ -22,7 +26,7 @@ export default function Switch() {
           name="radio"
           value="bebidas"
           checked={value === "bebidas"}
-          onChange={(e) => setValue(e.target.value)}
+          onChange={(e) => handleChange(e.target.value)}
         />
         <span className="name">Bebidas</span>
       </label>
@@ -31,9 +35,9 @@ export default function Switch() {
         <input
           type="radio"
           name="radio"
-          value="porções"
-          checked={value === "porções"}
-          onChange={(e) => setValue(e.target.value)}
+          value="carnes"
+          checked={value === "carnes"}
+          onChange={(e) => handleChange(e.target.value)}
         />
         <span className="name">Porções</span>
       </label>
