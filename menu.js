@@ -60,7 +60,7 @@ const menu = {
     { nome: "Lombo Suíno", preco: 13.99 },
     { nome: "Maminha", preco: 13.99 },
     { nome: "Carne do Sol", preco: 13.99 },
-    { nome: "Picanha Bovina", preco: 13.99 },
+    { nome: "Picanha Bovina", preco: 19.99 },
     { nome: "Linguiça", preco: 13.99 },
     { nome: "Contra Filé", preco: 13.99 },
     { nome: "Picanha Suína", preco: 13.99 },

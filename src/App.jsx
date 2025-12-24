@@ -26,7 +26,7 @@ function App() {
         ];
 
       case "carnes":
-        return menu.porcoes;
+        return [...menu.porcoes, ...menu.carnes_100g];
 
       default:
         return [];
