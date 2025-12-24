@@ -21,11 +21,11 @@ const menu = {
   ],
   bebidas_nao_alcoolicas: {
     lata: [
-      { nome: "Guaraná Antarctica Lata", preco: 6.0 },
-      { nome: "Guaraná Antarctica Zero Lata", preco: 6.0 },
-      { nome: "Pepsi Lata", preco: 6.0 },
-      { nome: "Pepsi Black Lata", preco: 6.0 },
-      { nome: "Coca-Cola Lata", preco: 6.0 },
+      { nome: "Guaraná Antarctica - Lata", preco: 6.0 },
+      { nome: "Guaraná Antarctica Zero - Lata", preco: 6.0 },
+      { nome: "Pepsi - Lata", preco: 6.0 },
+      { nome: "Pepsi Black - Lata", preco: 6.0 },
+      { nome: "Coca-Cola - Lata", preco: 6.0 },
     ],
     um_litro: [
       { nome: "Guaraná Antarctica 1L", preco: 10.0 },
