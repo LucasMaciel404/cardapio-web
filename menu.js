@@ -65,8 +65,16 @@ const menu = {
     { nome: "Picanha Suína", preco: 13.99 },
     { nome: "Carneiro", preco: 13.99 },
     { nome: "Panceta Suína", preco: 13.99 },
-    { nome: "Linguiça Tradicional", preco: 13.99, descricao: "R$:5,00 na unidade" },
-    { nome: "Linguiça Apimentada", preco: 8.8, descricao: "R$:5,00 na unidade" },
+    {
+      nome: "Linguiça Tradicional",
+      preco: 13.99,
+      descricao: "R$:5,00 na unidade",
+    },
+    {
+      nome: "Linguiça Apimentada",
+      preco: 8.8,
+      descricao: "R$:5,00 na unidade",
+    },
     { nome: "Coxa e Sobrecoxa", preco: 8.8 },
   ],
   porcoes: [
@@ -75,7 +83,7 @@ const menu = {
     { nome: "Baião Simples", preco: 22.0 },
     { nome: "Baião Cremoso", preco: 25.0 },
     { nome: "Arroz Branco", preco: 20.0 },
-    { nome: "Macarrão", preco: 2.0 },
+    { nome: "Macarrão", preco: 10.0 },
     { nome: "Purê de Batata", preco: 12.0 },
     { nome: "Salada Especial", preco: 20.0 },
     { nome: "Feijoada", preco: 25.0 },
