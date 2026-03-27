@@ -63,7 +63,7 @@ const menu = {
 		{ nome: "Picanha Bovina", preco: 19.99 },
 		{ nome: "Contra Filé", preco: 13.99 },
 		{ nome: "Picanha Suína", preco: 13.99 },
-		{ nome: "Carneiro", preco: 13.99 },
+		{ nome: "Carneiro", preco: 15npm start .99 },
 		{ nome: "Panceta Suína", preco: 13.99 },
 		{
 			nome: "Linguiça Tradicional",
